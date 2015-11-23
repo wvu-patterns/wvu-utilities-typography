@@ -1,0 +1,72 @@
+// WVU Typography
+//==================================================
+// Default base font size
+$wvu-base-font-size: 16px !default;
+
+// Font Families
+//==================================================
+
+// Helvetica Neue Families
+$wvu-helvetica-stack: 'Helvetica Neue', Helvetica, 'Helvetica LT Std', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$wvu-helvetica-light-stack: 'HelveticaNeueW01-45Ligh', $helvetica-neue-font-stack !default;
+$wvu-helvetica-black-stack: 'HelveticaNeueW01-97Blac', $helvetica-neue-font-stack !default;
+
+// Iowan Familes
+$wvu-iowan-stack: 'IowanOldStyleW01-Roman', Georgia, Times, serif !default;
+$wvu-iowan-italic-stack: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif !default;
+
+// Audiences Familes
+$wvu-traditional-audience: $wvu-iowan-stack !default;
+$wvu-narrow-audience: $wvu-iowan-italic-stack !default;
+
+// Shout
+$wvu-shout-stack: $wvu-helvetica-black-stack !default;
+$wvu-shout-fallback-stack: Impact, Charcoal, 'Arial Black', $wvu-base-font-family !default;
+
+// Preformatted
+$wvu-preformatted-stack: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+// Default Family
+$wvu-base-font-family: $wvu-helvetica-stack !default;
+
+
+// Font Default Styles
+//==================================================
+
+// Line Height
+$wvu-base-line-height: 1.5 !default;
+$wvu-shout-line-height: 0.80487em !default;
+$wvu-helvetica-bold-line-height: 1.08333333em !default;
+$wvu-traditional-audience-line-height: 1.16666666667em !default;
+
+// Line Length
+$wvu-typography-line-length: 45em !default;
+$wvu-shout-length: 'short' !default;  // short | medium | long
+
+// Shout font sizes
+$wvu-shout-font-size: 8.2em !default;
+$wvu-shout-font-size-medium: 4.5em !default;
+$wvu-shout-font-size-long: 3em !default;
+
+
+// Font Color Defaults
+//==================================================
+
+$wvu-base-font-color: $wvu-black !default;
+$wvu-base-accent-color: $pms-300-c !default;
+
+
+// Links Style Defaults
+//==================================================
+
+$wvu-link-base-color: $wvu-base-accent-color  !default;
+$wvu-link-hover-color: $pms-166-c !default;
+$wvu-link-visited-color: $pms-286-c !default;
+$wvu-link-border-style: 1px dotted !default;
+
+
+// Button Colors
+// TODO: move this to button pattern.
+//==================================================
+$wvu-button-base-color: $wvu-link-base-color !default;
+$wvu-button-hover-color: $wvu-link-hover-color !default;

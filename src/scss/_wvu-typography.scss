@@ -1,0 +1,402 @@
+@import 'wvu-typography-variables';
+@import 'wvu-typography-overrides';
+@import 'wvu-typography-mixins';
+
+
+html {
+  font-size: $wvu-base-font-size;
+}
+
+body {
+  font-family: $wvu-base-font-family;
+  line-height: 1.5;
+}
+
+// Font Families
+//==================================================
+
+.helvetica-light {
+  font-family: $wvu-helvetica-stack;
+  font-weight: normal;
+  line-height: 1em;
+
+  .fonts-loaded & {
+    font-family: $wvu-helvetica-light-stack;
+  }
+}
+
+// NOTE: You must include the fonts.com script for the Iowan web font to use Iowan as you see here.
+.iowan {
+  font-family: $wvu-iowan-stack;
+  font-weight: normal;
+  line-height: $wvu-traditional-audience-line-height;
+}
+.iowan-italic {
+  font-family: $iowan-italic-stack;
+  font-weight: normal;
+  line-height: $wvu-traditional-audience-line-height;
+}
+
+
+// Extends
+//==================================================
+
+%wvu-typography-header-styles {
+  color: $pms-432-c;
+  clear: both;
+  margin-bottom: 1em;
+}
+
+%wvu-typography-subhead-styles {
+  line-height: 1.15em;
+  margin-bottom: 18px;
+}
+
+%wvu-typography-max-width {
+  max-width: $wvu-typography-line-length;
+}
+
+%wvu-typography-vertical-align {
+  vertical-align: baseline;
+}
+
+%wvu-typography-sub-list-item {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+%wvu-typography-italic {
+  font-style: italic;
+}
+
+%wvu-typography-small-caps {
+  font-variant: small-caps;
+}
+
+%wvu-typography-pre-formatted {
+  margin-right: 2px;
+  margin-left: 1px;
+  padding: 2px 5px;
+  background-color: $wvu-lightest-grey;
+  font-size: .95em;
+  color: $wvu-black;
+  border-radius: 3px;
+  font-family: $wvu-preformatted-stack;
+}
+
+
+// Headers
+//==================================================
+
+h1,
+.wvu-h1 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  font-size: 3em;
+  line-height: 1.08333333em;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: .5em;
+  color: $pms-432-c;
+
+  @include media($wvu-bp-large) {
+    font-size: 4em;
+  }
+}
+
+h2,
+.wvu-h2 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-header-styles;
+  font-size: 2.4em;
+  line-height: 1.08333333em;
+}
+
+h3,
+.wvu-h3 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-header-styles;
+  @extend %wvu-typography-subhead-styles;
+  font-size: 1.75em;
+}
+
+h4,
+.wvu-h4 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-header-styles;
+  @extend %wvu-typography-subhead-styles;
+  color: $wvu-black;
+  font-size: 1.5em;
+}
+
+h5,
+.wvu-h5 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-header-styles;
+  @extend %wvu-typography-subhead-styles;
+  color: $wvu-black;
+  font-size: 1.2em;
+}
+
+h6,
+.wvu-h6 {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-header-styles;
+  @extend %wvu-typography-subhead-styles;
+  color: $wvu-black;
+  font-size: 1em;
+}
+
+
+// Base Elements
+//==================================================
+
+p {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+}
+
+ul {
+  @extend %wvu-typography-vertical-align;
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 18px;
+
+  ul {
+    list-style-type: circle;
+    margin-bottom: 0;
+  }
+
+  li {
+    @extend %wvu-typography-sub-list-item;
+  }
+}
+
+ol {
+  @extend %wvu-typography-vertical-align;
+  list-style-type: decimal;
+  padding-left: 1.5em;
+  margin-bottom: 18px;
+
+  ol {
+    list-style-type: lower-alpha;
+    margin-bottom: 0;
+  }
+
+  li {
+    @extend %wvu-typography-sub-list-item;
+  }
+}
+
+li {
+  @extend %wvu-typography-max-width;
+}
+
+dl {
+  @extend %wvu-typography-vertical-align;
+  margin-bottom: $base-spacing / 2;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: $base-spacing / 2;
+}
+
+dd {
+  margin: 0;
+}
+
+a {
+  @extend %wvu-typography-max-width;
+}
+
+blockquote {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+}
+
+pre {
+  @extend %wvu-typography-vertical-align;
+  @extend %wvu-typography-max-width;
+  @extend %wvu-typography-pre-formatted;
+}
+
+acronym {
+  @extend %wvu-typography-small-caps;
+}
+
+abbr {
+  @extend %wvu-typography-small-caps;
+}
+
+address {
+  @extend %wvu-typography-vertical-align;
+}
+
+fieldset {
+  @extend %wvu-typography-vertical-align;
+}
+
+em {
+  @extend %wvu-typography-italic;
+}
+
+i {
+  @extend %wvu-typography-italic;
+}
+
+cite {
+  @extend %wvu-typography-italic;
+}
+
+q {
+  @extend %wvu-typography-italic;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+code {
+  @extend %wvu-typography-pre-formatted;
+}
+
+kbd {
+  @extend %wvu-typography-pre-formatted;
+}
+
+samp {
+  @extend %wvu-typography-pre-formatted;
+}
+
+
+// WVU Shout
+//==================================================
+
+.wvu-shout {
+  font-size: 3em;
+  line-height: $wvu-shout-line-height;
+  font-family: $wvu-shout-fallback;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  .fonts-loaded & {
+    font-family: $wvu-shout;
+  }
+  @include media($wvu-bp-large) {
+    font-size: 8.2em;
+  }
+}
+
+.wvu-shout--medium-shout {
+  @include media($wvu-bp-medium) {
+    font-size: 4.5em;
+  }
+}
+
+.wvu-shout--long-shout {
+  font-size: 2em;
+
+  @include mq($wvu-bp-medium) {
+    font-size: 3em;
+  }
+}
+
+.wvu-shout--wvu-gold {
+  color: $wvu-gold;
+}
+
+.wvu-shout--wvu-blue {
+  color: $wvu-blue;
+}
+
+.wvu-shout--white {
+  color: $wvu-white;
+}
+
+
+// WVU Lede
+//==================================================
+
+.wvu-lede {
+  font-size: 2.4em;
+  font-family: $wvu-helvetica-stack;
+  line-height: 1.08333333em;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+
+  .fonts-loaded & {
+    font-family: $wvu-helvetica-light-stack;
+  }
+}
+
+p + .wvu-lede {
+  margin-top: .5em;
+}
+
+.wvu-lede-small {
+  font-size: 1.4em;
+  font-family: $wvu-helvetica-stack;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+
+  .fonts-loaded & {
+    font-family: $wvu-helvetica-light-stack;
+  }
+}
+
+p + .wvu-lede-small {
+  margin-top: 1em;
+}
+
+.wvu-lede--margin-bottom-zero {
+  margin-bottom: 0;
+}
+
+// Other
+//==================================================
+
+p + h2,
+.wvu-h2,
+table + h2,
+.wvu-h2,
+blockquote + h2,
+.wvu-h2,
+fieldset + h2,
+.wvu-h2 {
+  margin-top: 1em;
+}
+
+.wvu-sidebar {
+  @extend %wvu-typography-subhead-styles;
+}
+
+.wvu-text--center {
+  text-align: center;
+}
+
+.wvu-text--micro {
+  font-size: .8em;
+}
+
+.wvu-text--indent,
+address {
+  margin-left: 1.5em;
+}
+
+.wvu-text--white {
+  color: $wvu-white;
+}
+
+.wvu-text__max-width--small {
+  max-width: 25em;
+}
+
+.wvu-text--uppercase {
+  text-transform: uppercase;
+}
