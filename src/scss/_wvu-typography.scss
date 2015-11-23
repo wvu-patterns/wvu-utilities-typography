@@ -199,12 +199,12 @@ li {
 
 dl {
   @extend %wvu-typography-vertical-align;
-  margin-bottom: $base-spacing / 2;
+  margin-bottom: $wvu-base-spacing / 2;
 }
 
 dt {
   font-weight: bold;
-  margin-top: $base-spacing / 2;
+  margin-top: $wvu-base-spacing / 2;
 }
 
 dd {
