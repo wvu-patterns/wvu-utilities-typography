@@ -11,6 +11,9 @@ $wvu-helvetica-stack: 'Helvetica Neue', Helvetica, 'Helvetica LT Std', 'Helvetic
 $wvu-helvetica-light-stack: 'HelveticaNeueW01-45Ligh', $wvu-helvetica-stack !default;
 $wvu-helvetica-black-stack: 'HelveticaNeueW01-97Blac', $wvu-helvetica-stack !default;
 
+// Default Family
+$wvu-base-font-family: $wvu-helvetica-stack !default;
+
 // Iowan Familes
 $wvu-iowan-stack: 'IowanOldStyleW01-Roman', Georgia, Times, serif !default;
 $wvu-iowan-italic-stack: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif !default;
@@ -25,9 +28,6 @@ $wvu-shout-fallback-stack: Impact, Charcoal, 'Arial Black', $wvu-base-font-famil
 
 // Preformatted
 $wvu-preformatted-stack: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-
-// Default Family
-$wvu-base-font-family: $wvu-helvetica-stack !default;
 
 
 // Font Default Styles
