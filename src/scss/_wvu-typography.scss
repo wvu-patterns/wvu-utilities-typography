@@ -302,7 +302,7 @@ samp {
 .wvu-shout--long-shout {
   font-size: 2em;
 
-  @include mq($wvu-bp-medium) {
+  @include media($wvu-bp-medium) {
     font-size: 3em;
   }
 }
