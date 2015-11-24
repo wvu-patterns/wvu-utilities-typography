@@ -281,7 +281,7 @@ samp {
 .wvu-shout {
   font-size: 3em;
   line-height: $wvu-shout-line-height;
-  font-family: $wvu-shout-fallback;
+  font-family: $wvu-shout-fallback-stack;
   text-transform: uppercase;
   font-weight: normal;
 
