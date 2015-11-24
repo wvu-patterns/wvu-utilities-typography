@@ -286,7 +286,7 @@ samp {
   font-weight: normal;
 
   .fonts-loaded & {
-    font-family: $wvu-shout;
+    font-family: $wvu-shout-stack;
   }
   @include media($wvu-bp-large) {
     font-size: 8.2em;
