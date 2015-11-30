@@ -46,6 +46,8 @@ $wvu-shout-font-size: 8.2em !default;
 $wvu-shout-font-size-medium: 4.5em !default;
 $wvu-shout-font-size-long: 3em !default;
 
+// Base Spacing Size Dependent on Line Height
+$wvu-base-spacing: $wvu-base-line-height * em($wvu-base-font-size) !default;
 
 
 // Font Color Defaults
