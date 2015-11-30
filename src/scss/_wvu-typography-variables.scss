@@ -49,19 +49,3 @@ $wvu-shout-font-size-long: 3em !default;
 
 // Base Spacing Size Dependent on Line Height
 $wvu-base-spacing: $wvu-base-line-height * $wvu-typography-font-size !default;
-
-
-// Font Color Defaults
-//==================================================
-
-$wvu-base-font-color: $wvu-black !default;
-$wvu-base-accent-color: $pms-300-c !default;
-
-
-// Links Style Defaults
-//==================================================
-
-$wvu-link-base-color: $wvu-base-accent-color  !default;
-$wvu-link-hover-color: $pms-166-c !default;
-$wvu-link-visited-color: $pms-286-c !default;
-$wvu-link-border-style: 1px dotted !default;
