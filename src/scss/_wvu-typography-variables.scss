@@ -30,6 +30,7 @@ $wvu-preformatted-stack: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 // Font Default Styles
 //==================================================
+$wvu-typography-font-size: 1em;
 
 // Line Height
 $wvu-base-line-height: 1.5 !default;
@@ -47,7 +48,7 @@ $wvu-shout-font-size-medium: 4.5em !default;
 $wvu-shout-font-size-long: 3em !default;
 
 // Base Spacing Size Dependent on Line Height
-$wvu-base-spacing: $wvu-base-line-height * em($wvu-base-font-size) !default;
+$wvu-base-spacing: $wvu-base-line-height * $wvu-typography-font-size !default;
 
 
 // Font Color Defaults
@@ -64,10 +65,3 @@ $wvu-link-base-color: $wvu-base-accent-color  !default;
 $wvu-link-hover-color: $pms-166-c !default;
 $wvu-link-visited-color: $pms-286-c !default;
 $wvu-link-border-style: 1px dotted !default;
-
-
-// Button Colors
-// TODO: move this to button pattern.
-//==================================================
-$wvu-button-base-color: $wvu-link-base-color !default;
-$wvu-button-hover-color: $wvu-link-hover-color !default;
