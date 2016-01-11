@@ -25,7 +25,11 @@
     "tests"
   ],
   "dependencies": {
-    "wvu-utilities-variables" : "1.0.0",
-    "neat" : "1.7.2"
+    "wvu-utilities-variables": "1.0.0",
+    "neat": "1.7.2",
+    "fontfaceobserver": "~1.6.1"
+  },
+  "devDependencies": {
+    "normalize.scss": "~4.0.3"
   }
 }

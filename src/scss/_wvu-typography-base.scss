@@ -1,8 +1,3 @@
-@import 'wvu-typography-variables';
-@import 'wvu-typography-overrides';
-@import 'wvu-typography-mixins';
-
-
 html {
   font-size: $wvu-base-font-size;
 }
@@ -31,6 +26,7 @@ body {
   font-weight: normal;
   line-height: $wvu-traditional-audience-line-height;
 }
+
 .iowan-italic {
   font-family: $wvu-iowan-italic-stack;
   font-weight: normal;
@@ -42,8 +38,8 @@ body {
 //==================================================
 
 %wvu-typography-header-styles {
-  color: $pms-432-c;
   clear: both;
+  color: $pms-432-c;
   margin-bottom: 1em;
 }
 
@@ -74,16 +70,15 @@ body {
 }
 
 %wvu-typography-pre-formatted {
-  margin-right: 2px;
-  margin-left: 1px;
-  padding: 2px 5px;
   background-color: $wvu-lightest-grey;
-  font-size: .95em;
-  color: $wvu-black;
   border-radius: 3px;
+  color: $wvu-black;
   font-family: $wvu-preformatted-stack;
+  font-size: 0.95em;
+  margin-left: 1px;
+  margin-right: 2px;
+  padding: 2px 5px;
 }
-
 
 // Headers
 //==================================================
@@ -92,12 +87,12 @@ h1,
 .wvu-h1 {
   @extend %wvu-typography-vertical-align;
   @extend %wvu-typography-max-width;
+  color: $pms-432-c;
   font-size: 3em;
   line-height: 1.08333333em;
-  width: 100%;
+  margin-bottom: 0.5em;
   margin-top: 0;
-  margin-bottom: .5em;
-  color: $pms-432-c;
+  width: 100%;
 
   @include media($wvu-bp-large) {
     font-size: 4em;
@@ -164,8 +159,8 @@ p {
 ul {
   @extend %wvu-typography-vertical-align;
   list-style-type: disc;
-  padding-left: 1.5em;
   margin-bottom: 18px;
+  padding-left: 1.5em;
 
   ul {
     list-style-type: circle;
@@ -180,8 +175,8 @@ ul {
 ol {
   @extend %wvu-typography-vertical-align;
   list-style-type: decimal;
-  padding-left: 1.5em;
   margin-bottom: 18px;
+  padding-left: 1.5em;
 
   ol {
     list-style-type: lower-alpha;
@@ -279,17 +274,18 @@ samp {
 //==================================================
 
 .wvu-shout {
-  font-size: 3em;
-  line-height: $wvu-shout-line-height;
   font-family: $wvu-shout-fallback-stack;
-  text-transform: uppercase;
+  font-size: 3em;
   font-weight: normal;
+  line-height: $wvu-shout-line-height;
+  text-transform: uppercase;
+
+  @include media($wvu-bp-large) {
+    font-size: 8.2em;
+  }
 
   .fonts-loaded & {
     font-family: $wvu-shout-stack;
-  }
-  @include media($wvu-bp-large) {
-    font-size: 8.2em;
   }
 }
 
@@ -324,8 +320,8 @@ samp {
 //==================================================
 
 .wvu-lede {
-  font-size: 2.4em;
   font-family: $wvu-helvetica-stack;
+  font-size: 2.4em;
   line-height: 1.08333333em;
   margin-bottom: 2em;
   margin-top: 1.5em;
@@ -336,12 +332,12 @@ samp {
 }
 
 p + .wvu-lede {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .wvu-lede-small {
-  font-size: 1.4em;
   font-family: $wvu-helvetica-stack;
+  font-size: 1.4em;
   line-height: 1.5em;
   margin-bottom: 1em;
 
@@ -381,7 +377,7 @@ fieldset + h2,
 }
 
 .wvu-text--micro {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .wvu-text--indent,

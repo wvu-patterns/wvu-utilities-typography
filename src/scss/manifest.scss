@@ -1,0 +1,25 @@
+// 3rd Party Dependencies
+// =================================================
+
+// Normalize
+@import './bower_components/normalize.scss/fork-versions/default/normalize';
+
+// Bourbon & Neat
+@import './bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import './bower_components/neat/app/assets/stylesheets/neat';
+
+// WVU Dependency Utilities
+// =================================================
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-color';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-base';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-images';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-mediaquery';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-overrides';
+
+// WVU Utility Typography
+// =================================================
+
+@import 'wvu-typography-variables';
+@import 'wvu-typography-overrides';
+@import 'wvu-typography-mixins';
+@import 'wvu-typography-base';

@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>WVU Pattern Library - Typography Utility</title>
+    <title>WVU Pattern Library - Utility Buttons</title>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
 
-    <style>
-      /* Test ONLY Styles */
-      * {  box-sizing: border-box; }
-      html, body { padding: 0; margin: 0; }
-    </style>
-  </head>
+    <link href="css/styles.css" rel="stylesheet" />
 
+  </head>
   <body>
 
+    <h1>Typography Tests</h1>
+    <div class="container">
+
+      <div class="typography-classes">
+        <h2>Fonts not loaded</h2>
+        <div class="helvetica-light">
+          helvetica-light
+        </div>
+
+        <div class="iowan">
+          iowan
+        </div>
+
+        <div class="iowan-italic">
+          iowan-italic
+        </div>
+      </div>
+
+      <div class="typography-classes fonts-loaded">
+        <h2>Fonts loaded</h2>
+        <div class="helvetica-light">
+          helvetica-light
+        </div>
+
+        <div class="iowan">
+          iowan
+        </div>
+
+        <div class="iowan-italic">
+          iowan-italic
+        </div>
+      </div>
+
+
+      <h1>.wvu-h1</h1>
+      <h2>.wvu-h2</h2>
+      <h3>.wvu-h3</h3>
+      <h4>.wvu-h4</h4>
+      <h5>.wvu-h5</h5>
+      <h6>.wvu-h6</h6>
+
+      <div class="wvu-h1">.wvu-h1</div>
+      <div class="wvu-h2">.wvu-h2</div>
+      <div class="wvu-h3">.wvu-h3</div>
+      <div class="wvu-h4">.wvu-h4</div>
+      <div class="wvu-h5">.wvu-h5</div>
+      <div class="wvu-h6">.wvu-h6</div>
+
+    </div>
+    <script src="bower_components/fontfaceobserver/src/observer.js"></script>
+    <script src="/src/javascripts/fontfaceobserver__custom.js"></script>
+    <script async src="https://fast.fonts.net/jsapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.js"></script>
+    <script async src="https://fast.fonts.net/jsapi/b5bb5fa1-40c1-4690-9464-76ee16d23dbc.js"></script> <!-- Load Iowan Roman & Italic from Fonts.com -->
   </body>
+
 </html>
